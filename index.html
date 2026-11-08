@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>DaVinci Flora &amp; Living</title>
+<meta name="description" content="Two webshops. One DaVinci. Flora for olive and citrus trees, Mediterranean plants and pots; Living for paint, wall finishes, tiles and microcement; workshops that bring them together.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400&family=Hanken+Grotesk:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/site.css">
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <defs>
+    <filter id="grain" x="0" y="0" width="100%" height="100%"><feTurbulence type="fractalNoise" baseFrequency=".85" numOctaves="2" stitchTiles="stitch"/><feColorMatrix values="0 0 0 0 .35  0 0 0 0 .27  0 0 0 0 .18  0 0 0 .5 0"/></filter>
+    <filter id="soft" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="6"/></filter>
+    <filter id="soft2" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="16"/></filter>
+  </defs>
+</svg>
+<a class="sr skip" href="#main">Skip to content</a>
+<div class="banner" role="note"><b>Prototype.</b> Example products, placeholder prices and dates. The basket and checkout are for demonstration only.</div>
+<header class="hdr" id="hdr"></header>
+<div class="mmenu" id="mmenu"></div>
+<main id="main" tabindex="-1"></main>
+<footer class="ftr" id="ftr"></footer>
+
+<div class="scrim" id="scrim"></div>
+<aside class="drawer" id="drawer" role="dialog" aria-modal="true" aria-label="Basket"></aside>
+<div class="search" id="search" role="dialog" aria-modal="true" aria-label="Search both shops">
+  <div class="wrap search-in">
+    <div class="search-top"><span class="eyebrow">Search Flora and Living</span><button class="ibtn" data-close>Close</button></div>
+    <label class="field">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="M15.5 15.5L21 21"/></svg>
+      <span class="sr">Search products</span><input id="sq" type="search" placeholder="Olive, lime plaster, zellige" autocomplete="off">
+    </label>
+    <div class="sres pgrid" id="sres"></div>
+  </div>
+</div>
+<div class="modal" id="modal"></div>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+<div class="curtain" id="curtain" aria-hidden="true"><b>DaVinci</b></div>
+
+<script src="js/data.js"></script>
+<script src="js/photos.js"></script>
+<script src="js/art.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
